@@ -19,7 +19,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 print(f"train {X_train.shape} test {X_test.shape}")
 print(y_test.value_counts(normalize=True))
 
-clf = RandomForestClassifier(n_estimators = 100, random_state=42, n_jobs=-1)
+clf = RandomForestClassifier(n_estimators = 100, random_state=42, n_jobs=-1, class_weight= "balanced")
 clf.fit(X_train, y_train)
 
 pred = clf.predict(X_test)

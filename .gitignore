@@ -5,3 +5,4 @@ __pycache__/
 predictions.db
 .pytest_cache/
 docs/
+*.bak
