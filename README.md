@@ -44,8 +44,6 @@ Factory sensors --JSON--> POST /predict --> {"risk": 0.88, "status": "model"}
 
 Dataset: AI4I 2020 Predictive Maintenance — 10,000 rows x 14 cols, 339 fails (3.39%), 0 missing values. Best signals from EDA: **Tool wear + Torque**. Temperature alone does not separate well.
 
-> Full learning story with every concept explained: [docs/GUIDE.md](docs/GUIDE.md)
-
 ## Architecture
 
 ```text
@@ -136,7 +134,6 @@ data/raw.csv               AI4I 10k machines
 model.joblib               trained RandomForest (~2.6 MB)
 metrics.json               precision / recall / F1 for CV
 Dockerfile                 python:3.11-slim prod image
-docs/GUIDE.md              full concept guide with examples
 ```
 
 ## Roadmap
